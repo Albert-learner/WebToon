@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WebToon</string>
+    <string name="txt_title">WEBTOON</string>
+    <string name="action_settings">Settings</string>
+    <string name="daum_Webtoon">DAUM</string>
+    <string name="naver_Webtoon">NAVER</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_title"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btn_daum_webtoon"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:src="@drawable/daum" />
+
+        <ImageButton
+            android:id="@+id/btn_naver_webtoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_daum_webtoon"
+            android:background="#ffffff"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:src="@drawable/naver" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_daum_webtoon"
+            android:layout_alignLeft="@id/btn_daum_webtoon"
+            android:layout_alignRight="@id/btn_daum_webtoon"
+            android:gravity="center"
+            android:text="@string/daum_Webtoon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_naver_webtoon"
+            android:layout_alignLeft="@id/btn_naver_webtoon"
+            android:layout_alignRight="@id/btn_naver_webtoon"
+            android:gravity="center"
+            android:text="@string/naver_Webtoon" />
+
+    </LinearLayout>
+
+</LinearLayout>
